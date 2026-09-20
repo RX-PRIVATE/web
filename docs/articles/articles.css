@@ -11,7 +11,7 @@ body {
 }
 
 #articlesHeader {
-    padding: 60px 8%;
+    padding: 60px 8% 40px;
 }
 
 #articlesHeader h1 {
@@ -22,29 +22,78 @@ body {
 #articlesHeader p {
     color: #999;
     max-width: 600px;
+    line-height: 1.6;
+}
+
+#articleList {
+    padding: 0 8% 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .article-card {
-    margin: 0 8% 24px;
-    padding: 24px;
     background: #131313;
     border: 1px solid #2a2a2a;
     border-radius: 8px;
-    text-decoration: none;
-    color: inherit;
+    padding: 24px;
+    transition: border-color 0.25s ease;
 }
 
-.article-card h3 {
+.article-card:hover {
+    border-color: #B8FF10;
+}
+
+.tag {
+    display: inline-block;
+    color: #B8FF10;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.article-card h2 {
     font-size: 20px;
     margin-bottom: 8px;
+    line-height: 1.4;
 }
 
 .article-card p {
     color: #999;
+    font-size: 15px;
+    line-height: 1.5;
     margin-bottom: 12px;
 }
 
 .meta {
-    color: #B8FF10;
+    color: #666;
     font-size: 13px;
+}
+
+#articlesFooter {
+    padding: 40px 8% 80px;
+    text-align: center;
+    border-top: 1px solid #2a2a2a;
+}
+
+#articlesFooter p {
+    color: #999;
+    font-size: 16px;
+}
+
+#articlesFooter a {
+    color: #B8FF10;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#articlesFooter a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    #articlesHeader h1 { font-size: 30px; }
+    #articleList { padding: 0 5% 40px; }
+    #articlesFooter { padding: 30px 5% 60px; }
 }

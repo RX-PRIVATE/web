@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://returnxero.com/</loc>
-    </url>
-    <url>
-        <loc>https://returnxero.com/homepage/</loc>
-    </url>
-    <url>
-        <loc>https://returnxero.com/LetsConnect/</loc>
-    </url>
-    <url>
-        <loc>https://returnxero.com/showcase/</loc>
-    </url>
-    <url>
-        <loc>https://returnxero.com/about/</loc>
-    </url>
-    <url>
-        <loc>https://returnxero.com/articles/</loc>
-    </url>
+
+  <url>
+    <loc>https://returnxero.com/</loc>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://returnxero.com/showcase/</loc>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://returnxero.com/articles/</loc>
+    <lastmod>2026-10-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://returnxero.com/about/</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+
+  <url>
+    <loc>https://returnxero.com/LetsConnect/</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+
 </urlset>

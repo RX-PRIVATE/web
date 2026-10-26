@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<<<<<<< HEAD
 
   <url>
     <loc>https://returnxero.com/</loc>
@@ -26,4 +27,21 @@
     <lastmod>2026-10-20</lastmod>
   </url>
 
+=======
+    <url>
+        <loc>https://returnxero.com/</loc>
+    </url>
+    <url>
+        <loc>https://returnxero.com/LetsConnect/</loc>
+    </url>
+    <url>
+        <loc>https://returnxero.com/showcase/</loc>
+    </url>
+    <url>
+        <loc>https://returnxero.com/about/</loc>
+    </url>
+    <url>
+        <loc>https://returnxero.com/articles/</loc>
+    </url>
+>>>>>>> 22af3a9e57c50199dcc3c0daff45355501f9d99f
 </urlset>

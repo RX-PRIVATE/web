@@ -3,7 +3,7 @@ class NavBar extends HTMLElement {
         this.innerHTML = `
               <div id="topBar">
             <div id="mainLogo" class="topBarItems">
-                <a href="/homepage/">
+                <a href="/">
                     <img src="/topBar-logo.svg" alt="returnXER0">
                 </a>
             </div>

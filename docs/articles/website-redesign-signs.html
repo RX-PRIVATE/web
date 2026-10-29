@@ -4,78 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO TITLE TAG -->
     <title>5 Signs Your Business Needs a Website Redesign | returnXERO</title>
-    <link rel="canonical" href="https://returnxero.com/articles/website-redesign-signs">
-
-    <!-- PRELOAD YOUR FONT -->
-    <link rel="preload" href="/roboto_mono_family/RobotoMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
-
-    <!-- SEO META DESCRIPTION -->
     <meta name="description" content="Is your website costing you customers? Here are 5 clear signs that your business needs a website redesign to improve speed, mobile experience, and sales.">
+    <link rel="canonical" href="https://returnxero.com/articles/website-redesign-signs.html">
 
-    <!-- ARTICLE SCHEMA FOR RICH RESULTS -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "5 Signs Your Business Needs a Website Redesign",
-      "author": {
-        "@type": "Organization",
-        "name": "returnXERO"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "returnXERO",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://returnxero.com/favicon.png"
-        }
-      },
-      "datePublished": "2026-10-28",
-      "description": "Is your website costing you customers? Here are 5 clear signs that your business needs a website redesign."
-    }
-    </script>
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="5 Signs Your Business Needs a Website Redesign">
+    <meta property="og:description" content="Is your website costing you customers? Here are 5 clear signs that your business needs a website redesign.">
+    <meta property="og:url" content="https://returnxero.com/articles/website-redesign-signs.html">
+    <meta property="og:site_name" content="returnXERO">
 
     <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="preload" href="/roboto_mono_family/RobotoMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
     <link rel="stylesheet" href="/Global.css">
     <link rel="stylesheet" href="/topBar.css">
-    <link rel="stylesheet" href="/articles/articles.css">
 
     <style>
-        .article-wrap {
-            max-width: 800px;
-            margin: 100px auto;
-            padding: 20px;
+        /* ---------- Base ---------- */
+        .article-page { max-width: 800px; margin: 0 auto; padding: 110px 20px 80px; color: #d5d5d5; }
+
+        .back-link { margin-bottom: 32px; }
+        .back-link a {
+            display: inline-flex; align-items: center; gap: 6px;
+            color: #888; text-decoration: none; font-size: 14px;
+            letter-spacing: 0.3px; transition: color 0.2s ease;
+        }
+        .back-link a:hover { color: #B8FF10; }
+
+        .article-page h1 {
+            color: #f0f0f0; font-size: 40px; line-height: 1.2;
+            margin: 0 0 24px; letter-spacing: -0.5px;
+        }
+        .article-page h2 {
+            color: #f0f0f0; font-size: 24px; line-height: 1.3;
+            margin: 56px 0 18px; padding-bottom: 12px;
+            border-bottom: 1px solid #222;
+        }
+        .article-page h3 { color: #f0f0f0; font-size: 19px; margin: 0 0 14px; }
+
+        .article-page p {
+            font-size: 16px; line-height: 1.85;
+            color: #b5b5b5; margin: 0 0 20px;
+        }
+        .article-page .intro {
+            font-size: 19px; line-height: 1.7;
+            color: #cfcfcf; margin-bottom: 8px;
+        }
+        .article-page strong { color: #f0f0f0; font-weight: 600; }
+
+        .article-page a {
+            color: #B8FF10; text-decoration: none;
+            border-bottom: 1px solid rgba(184, 255, 16, 0.35);
+            transition: border-color 0.2s ease;
+        }
+        .article-page a:hover { border-bottom-color: #B8FF10; }
+
+        /* ---------- CTA Card ---------- */
+        .cta {
+            margin-top: 64px;
+            padding: 36px 32px;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            background: linear-gradient(180deg, #141414 0%, #0f0f0f 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .cta::before {
+            content: "";
+            position: absolute; top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #B8FF10, transparent);
+            opacity: 0.7;
+        }
+        .cta h3 {
+            font-size: 22px; margin: 0 0 12px;
+            color: #f0f0f0; letter-spacing: -0.3px;
+        }
+        .cta .cta-desc {
+            font-size: 15px; line-height: 1.7;
+            color: #999; margin: 0 0 28px;
         }
 
-        .back-link {
-            color: #888;
+        /* ---------- CTA Link Rows ---------- */
+        .cta-links {
+            display: flex; flex-direction: column; gap: 12px;
+            margin: 0; padding: 0; list-style: none;
+        }
+        .cta-links li { margin: 0; }
+        .cta-links a {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 16px;
+            padding: 16px 20px;
+            background: #161616;
+            border: 1px solid #262626;
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 15px;
+            font-weight: 500;
             text-decoration: none;
+            border-bottom: 1px solid #262626;
+            transition: all 0.22s ease;
         }
-
-        .article-wrap h1 {
-            margin-top: 20px;
+        .cta-links a:hover {
+            background: #1c1c1c;
+            border-color: #B8FF10;
+            color: #f0f0f0;
+            transform: translateX(4px);
         }
-
-        .article-wrap .intro {
-            font-size: 1.05em;
-            color: #444;
+        .cta-links a .arrow {
+            color: #B8FF10;
+            font-size: 18px;
+            transition: transform 0.22s ease;
         }
+        .cta-links a:hover .arrow { transform: translateX(4px); }
 
-        .article-wrap hr {
-            margin: 40px 0;
-            border: 0;
-            border-top: 1px solid #ccc;
-        }
-
+        /* ---------- Mobile ---------- */
         @media (max-width: 640px) {
-            .article-wrap {
-                margin: 90px auto;
-                padding: 16px;
-            }
+            .article-page { padding: 90px 16px 60px; }
+            .article-page h1 { font-size: 28px; }
+            .article-page h2 { font-size: 21px; margin-top: 44px; }
+            .article-page p { font-size: 15px; }
+            .article-page .intro { font-size: 17px; }
+            .cta { padding: 24px 20px; margin-top: 48px; }
+            .cta h3 { font-size: 19px; }
+            .cta-links a { padding: 14px 16px; font-size: 14px; }
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "5 Signs Your Business Needs a Website Redesign",
+        "description": "Is your website costing you customers? Here are 5 clear signs that your business needs a website redesign.",
+        "datePublished": "2026-10-28",
+        "dateModified": "2026-10-28",
+        "mainEntityOfPage": "https://returnxero.com/articles/website-redesign-signs.html",
+        "author": { "@type": "Organization", "name": "returnXERO" },
+        "publisher": {
+            "@type": "Organization",
+            "name": "returnXERO",
+            "logo": { "@type": "ImageObject", "url": "https://returnxero.com/favicon.png" }
+        }
+    }
+    </script>
 
     <script src="/navbar.js"></script>
 </head>
@@ -83,42 +156,69 @@
 
     <rx-navbar></rx-navbar>
 
-    <main class="article-wrap">
+    <main class="article-page">
 
-        <a href="/articles/" class="back-link">&larr; Back to Articles</a>
-
-        <h1>5 Signs Your Business Needs a Website Redesign</h1>
+        <nav class="back-link">
+            <a href="/articles/">&larr; Back to Articles</a>
+        </nav>
 
         <article>
 
-            <p class="intro">Your website is often the first impression a customer has of your business. But what worked in 2020 might be actively hurting your sales today. If your site feels slow, outdated, or hard to use on a phone, you are likely losing clients to competitors.</p>
+            <header>
+                <h1>5 Signs Your Business Needs a Website Redesign</h1>
+                <p class="intro">Your website is often the first impression a customer has of your business. But what worked in 2020 might be actively hurting your sales today. If your site feels slow, outdated, or hard to use on a phone, you are likely losing clients to competitors.</p>
+            </header>
 
-            <p>Here are 5 undeniable signs that it is time for a website redesign.</p>
+            <section>
+                <h2>1. Your Site is Not Mobile-Responsive</h2>
+                <p>More than half of all web traffic comes from mobile devices. If a user has to pinch and zoom to read your text, or if buttons are too small to tap, they will leave immediately. Google also uses "mobile-first indexing," meaning it judges your site primarily on how it performs on a phone.</p>
+            </section>
 
-            <h2>1. Your Site is Not Mobile-Responsive</h2>
-            <p>More than half of all web traffic comes from mobile devices. If a user has to pinch and zoom to read your text, or if buttons are too small to tap, they will leave immediately. Google also uses "mobile-first indexing," meaning it judges your site primarily on how it performs on a phone.</p>
+            <section>
+                <h2>2. It Loads Too Slowly</h2>
+                <p>Attention spans are short. If your website takes more than 3 seconds to load, you are losing visitors. Heavy images, outdated code, and cheap hosting can make a site lag. A redesign focuses on optimizing speed so users stay engaged.</p>
+            </section>
 
-            <h2>2. It Loads Too Slowly</h2>
-            <p>Attention spans are short. If your website takes more than 3 seconds to load, you are losing visitors. Heavy images, outdated code, and cheap hosting can make a site lag. A redesign focuses on optimizing speed so users stay engaged.</p>
+            <section>
+                <h2>3. The Design Looks Dated</h2>
+                <p>Design trends change fast. If your website still uses drop shadows, clip art, or a cluttered layout, it makes your business look out of touch. A modern, clean design builds trust and makes your brand look professional.</p>
+            </section>
 
-            <h2>3. The Design Looks Dated</h2>
-            <p>Design trends change fast. If your website still uses drop shadows, clip art, or a cluttered layout, it makes your business look out of touch. A modern, clean design builds trust and makes your brand look professional.</p>
+            <section>
+                <h2>4. High Bounce Rate (People Leave Immediately)</h2>
+                <p>Do you know how long people stay on your site? If they land on your homepage and leave within seconds, it means they didn't find what they were looking for. A redesign focuses on clear messaging, obvious calls-to-action, and better user experience (UX).</p>
+            </section>
 
-            <h2>4. High Bounce Rate (People Leave Immediately)</h2>
-            <p>Do you know how long people stay on your site? If they land on your homepage and leave within seconds, it means they didn't find what they were looking for. A redesign focuses on clear messaging, obvious calls-to-action, and better user experience (UX).</p>
+            <section>
+                <h2>5. You Cannot Update It Yourself</h2>
+                <p>If you have to pay a developer every time you want to change a photo or add a new service, your website is a bottleneck. Modern sites should be built so you can easily update content without touching code.</p>
+            </section>
 
-            <h2>5. You Cannot Update It Yourself</h2>
-            <p>If you have to pay a developer every time you want to change a photo or add a new service, your website is a bottleneck. Modern sites should be built so you can easily update content without touching code.</p>
+            <aside class="cta">
+                <h3>The Redesign Solution</h3>
+                <p class="cta-desc">If you checked off any of these signs, a redesign is not just a cosmetic upgrade — it is an investment in your revenue.</p>
 
-            <hr>
-
-            <h3>The Redesign Solution</h3>
-            <p>If you checked off any of these signs, a redesign is not just a cosmetic upgrade—it is an investment in your revenue.</p>
-
-            <!-- INTERNAL LINKS TO OTHER ARTICLES -->
-            <p>Not sure if you need a simple update or a full rebuild? Read our breakdown of <a href="/articles/custom-website-cost-india">How Much a Custom Website Costs in India</a>. Or, if you want to stand out, explore <a href="/articles/2d-vs-3d-web-design">The Difference Between 2D and 3D Websites</a>.</p>
-
-            <p>Ready to modernize your brand? <a href="/LetsConnect/">Contact returnXERO today</a> to discuss your redesign.</p>
+                <ul class="cta-links">
+                    <li>
+                        <a href="/articles/custom-website-cost-india.html">
+                            <span>How Much a Custom Website Costs in India</span>
+                            <span class="arrow">&rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/articles/2d-vs-3d-web-design.html">
+                            <span>The Difference Between 2D and 3D Websites</span>
+                            <span class="arrow">&rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/LetsConnect/">
+                            <span>Contact returnXERO to discuss your redesign</span>
+                            <span class="arrow">&rarr;</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
 
         </article>
 

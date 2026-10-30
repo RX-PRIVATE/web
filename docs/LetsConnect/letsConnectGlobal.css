@@ -727,4 +727,8 @@ textarea.textarea::-webkit-scrollbar-thumb:hover {
 }
 
 
-
+.rx-select {
+  position: relative;
+  width: 100%;
+  margin-top: 0.92vh;
+}
